@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="checkbox" name="terms" required> I Agree to the <a href="#">Terms and Conditions</a>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
